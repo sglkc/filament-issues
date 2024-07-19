@@ -21,8 +21,7 @@ class DatabaseSeeder extends Seeder
         $getUserModel->invoke($filamentMakeUserCommand)::create([
             'name' => 'admin',
             'email' => 'admin@gmail.com',
-            'password' => Hash::make('password'),
-            'role' => 'admin'
+            'password' => Hash::make('password')
         ]);
     }
 }
